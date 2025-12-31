@@ -1,0 +1,116 @@
+:root {
+  --bg-main: #18181b;
+  --bg-secondary: #27272a;
+  --border-color: #3f3f46;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --accent-red: #ef4444;
+}
+
+* { box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--bg-main);
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+/* MAIN CONTAINER - Removing borders/radius */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* No border-radius or border needed - the Window has it */
+  background-color: var(--bg-main);
+}
+
+/* CONTENT AREA */
+.content-area {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  gap: 16px;
+  opacity: 0.8;
+}
+
+.interim {
+  color: var(--text-secondary);
+}
+
+/* FOOTER */
+.controls {
+  height: 72px;
+  background-color: var(--bg-main);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* BUTTONS */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.record-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.record-btn:hover {
+  border-color: var(--text-secondary);
+  background-color: #333;
+}
+
+.record-btn.recording {
+  background-color: var(--accent-red);
+  border-color: var(--accent-red);
+  color: white;
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
