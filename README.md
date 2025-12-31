@@ -1,5 +1,3 @@
----
-
 # 🎙️ My AI Flow (Wispr Flow Clone)
 
 > A high-performance, cross-platform voice-to-text desktop application built with **Rust (Tauri)** and **React**.
