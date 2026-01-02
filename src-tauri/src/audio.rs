@@ -63,7 +63,7 @@ pub async fn start_recording(
     tokio::spawn(async move {
        
         let url = format!(
-            "wss://api.deepgram.com/v1/listen?encoding=linear16&sample_rate={}&channels=1&smart_format=true&model=nova-2&interim_results=true",
+            "wss://api.deepgram.com/v1/listen?encoding=linear16&sample_rate={}&channels=1&smart_format=true&model=nova-3&language=en-IN&interim_results=true",
             sample_rate
         );
 
