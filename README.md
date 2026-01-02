@@ -12,7 +12,7 @@ Unlike web-based recorders, this app runs as a native desktop binary, offering s
 
 * **⚡ Real-Time Streaming:** Audio is streamed via WebSockets to Deepgram for near-instant transcription.
 * **🎙️ Native Audio Capture:** Uses Rust's `cpal` library to capture raw PCM audio directly from hardware (bypassing browser throttling).
-* **🧠 AI-Powered:** Powered by Deepgram's `Nova-2` model for high-accuracy speech recognition.
+* **🧠 AI-Powered:** Powered by Deepgram's `Nova-3` model for high-accuracy speech recognition.
 * **🔄 Instant Feedback:** Displays "Interim" (gray) results while speaking and "Final" (white) results upon completion.
 * **🛡️ Secure Architecture:** API keys are protected using compile-time environment variables (`dotenv-codegen`).
 * **🎨 Modern UI:** A clean, dark-themed interface built with React and Lucide icons.
