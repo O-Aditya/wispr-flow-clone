@@ -2,6 +2,11 @@
 
 > A high-performance, cross-platform voice-to-text desktop application built with **Rust (Tauri)** and **React**.
 
+
+
+https://github.com/user-attachments/assets/724bab3b-c363-4289-a5e8-e766af514c3f
+
+
 ## 📖 Overview
 
 This project is a technical implementation of a real-time voice dictation app inspired by **Wispr Flow**. It allows users to press a button, speak into their microphone, and see their speech converted to text instantly using AI.
